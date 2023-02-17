@@ -1,5 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
 import ProductScreen from "./screens/ProductScreen";
@@ -18,6 +19,7 @@ function App() {
         <Route path={"/cart"} element={<CartScreen />} />
         <Route path={"/checkout"} element={<CheckoutScreen />} />
       </Routes>
+      <Footer/>
     </>
   );
 }
