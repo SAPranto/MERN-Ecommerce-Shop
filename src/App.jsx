@@ -1,8 +1,11 @@
-import { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import { Route, Routes } from "react-router-dom";
 import HomeScreen from "./screens/HomeScreen";
+import ProductScreen from "./screens/ProductScreen";
+import CategoryScreen from "./screens/CategoryScreen";
+import CheckoutScreen from "./screens/CheckoutScreen";
+import CartScreen from "./screens/CartScreen";
 
 function App() {
   return (
@@ -10,6 +13,10 @@ function App() {
       <Navbar/>
       <Routes>
         <Route path={"/"} element={<HomeScreen />} />
+        <Route path={"/category"} element={<CategoryScreen />} />
+        <Route path={"/product"} element={<ProductScreen />} />
+        <Route path={"/cart"} element={<CartScreen />} />
+        <Route path={"/checkout"} element={<CheckoutScreen />} />
       </Routes>
     </>
   );
