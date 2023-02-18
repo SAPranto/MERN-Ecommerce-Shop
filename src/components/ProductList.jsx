@@ -1,7 +1,6 @@
 import React from "react";
-import { AiFillFire, AiFillCarryOut } from "react-icons/ai";
-import { GiRunningShoe } from "react-icons/gi";
 import "/src/App.css"
+import TabMenu from "./TabMenu";
 
 const products = [
   {
@@ -79,23 +78,8 @@ const ProductList = () => {
           Our Collection
         </h3>
       </div>
-      {/* Tab Menu */}
-      <ul className="flex flex-wrap items-center py-10 justify-center bg-white text-cyan-800 gap-20 text-lg font-semibold ">
-        <li className="flex gap-2 cursor-pointer">
-          <GiRunningShoe className="mt-1 text-green-700 text-xl" />
-          New Arrivals
-        </li>
-        <li className="flex gap-2 cursor-pointer">
-          <AiFillFire className="mt-1 text-red-600 text-xl" />
-          Most Selling
-        </li>
-        <li className="flex gap-2 cursor-pointer">
-          <AiFillCarryOut className="mt-1 text-sky-400 text-xl" />
-          Pre-Order
-        </li>
-      </ul>
+      <TabMenu/>
       {/* Product List */}
-
       <section className="py-10 bg-gray-100">
         <div className="mx-6 md:mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {products.map((product) => (
