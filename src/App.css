@@ -1,0 +1,3 @@
+.btn {
+    @apply px-4 py-2 text-white rounded transition-all hover:scale-105 duration-300 text-sm xl:text-base hover:bg-blue-600;
+  }

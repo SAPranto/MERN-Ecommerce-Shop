@@ -1,39 +1,62 @@
-import React from 'react'
+import React, { useState, useEffect } from "react";
 
 const Navbar = () => {
+
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 0) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <nav className="flex justify-between bg-gray-900 text-white w-full">
+    <nav
+    className={`flex justify-between w-full ${
+      isSticky ? "bg-gray-900 transition-all duration-500 text-white" : "bg-transparent transition-all duration-500 text-black"
+    } sticky top-0 z-50`}
+  >
     <div className="px-5 xl:px-12 py-6 flex w-full items-center">
       <a className="text-3xl font-bold font-heading" href="#">
         {/* <img class="h-9" src="logo.png" alt="logo"> */}
         NeXoy
       </a>
       {/* Nav Links */}
-      <ul className="hidden md:flex px-4 mx-auto font-semibold font-heading space-x-12">
+      <ul className="hidden md:flex px-4 mx-auto text-lg font-semibold font-heading space-x-12">
         <li>
-          <a className="hover:text-gray-200" href="#">
+          <a className="hover:text-sky-600" href="#">
             Home
           </a>
         </li>
         <li>
-          <a className="hover:text-gray-200" href="#">
+          <a className="hover:text-sky-600" href="#">
             Catagory
           </a>
         </li>
         <li>
-          <a className="hover:text-gray-200" href="#">
+          <a className="hover:text-sky-600" href="#">
             Collections
           </a>
         </li>
         <li>
-          <a className="hover:text-gray-200" href="#">
+          <a className="hover:text-sky-600" href="#">
             Contact Us
           </a>
         </li>
       </ul>
       {/* Header Icons */}
-      <div className="hidden xl:flex items-center space-x-5 items-center">
-        <a className="hover:text-gray-200" href="#">
+      <div className="hidden xl:flex items-center space-x-5">
+        <a className="hover:text-sky-600" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -49,7 +72,7 @@ const Navbar = () => {
             />
           </svg>
         </a>
-        <a className="flex items-center hover:text-gray-200" href="#">
+        <a className="flex items-center hover:text-sky-600" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6"
@@ -70,10 +93,10 @@ const Navbar = () => {
           </span>
         </a>
         {/* Sign In / Register      */}
-        <a className="flex items-center hover:text-gray-200" href="#">
+        <a className="flex items-center hover:text-sky-600" href="#">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6 hover:text-gray-200"
+            className="h-6 w-6 hover:text-sky-600"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -92,7 +115,7 @@ const Navbar = () => {
     <a className="xl:hidden flex mr-6 items-center" href="#">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6 hover:text-gray-200"
+        className="h-6 w-6 hover:text-sky-600"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
@@ -112,7 +135,7 @@ const Navbar = () => {
     <a className="navbar-burger self-center mr-12 xl:hidden" href="#">
       <svg
         xmlns="http://www.w3.org/2000/svg"
-        className="h-6 w-6 hover:text-gray-200"
+        className="h-6 w-6 hover:text-sky-600"
         fill="none"
         viewBox="0 0 24 24"
         stroke="currentColor"
