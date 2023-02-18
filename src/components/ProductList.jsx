@@ -8,65 +8,65 @@ const products = [
     id: 1,
     imageUrl:
       "https://images.unsplash.com/photo-1512374382149-233c42b6a83b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=735&q=80",
-    title: "Adobe Photoshop CC 2022",
-    description: "Lisbon, Portugal",
-    price: "$850",
+    title: "Nike Shoe",
+    description: "Original Replica",
+    price: "৳2850",
   },
   {
     id: 2,
     imageUrl:
       "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    title: "React Native Development",
-    description: "San Francisco, CA",
-    price: "$1,200",
+    title: "Adidas",
+    description: "KA7",
+    price: "৳1,200",
   },
   {
     id: 3,
     imageUrl:
       "https://images.unsplash.com/photo-1608231387042-66d1773070a5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
-    title: "Vue.js Mastery",
-    description: "Vancouver, BC",
-    price: "$799",
+    title: "Puma",
+    description: "B579",
+    price: "৳799",
   },
   {
     id: 4,
     imageUrl:
       "https://images.unsplash.com/photo-1605348532760-6753d2c43329?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80",
-    title: "GraphQL Fundamentals",
-    description: "Remote",
-    price: "$599",
+    title: "Demo Shoe",
+    description: "Description or Model",
+    price: "৳1890",
   },
   {
     id: 5,
     imageUrl:
       "https://images.unsplash.com/photo-1600269452121-4f2416e55c28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
-    title: "GraphQL Fundamentals",
-    description: "Remote",
-    price: "$599",
+    title: "Demo Shoe",
+    description: "Description or Model",
+    price: "৳1890",
   },
   {
     id: 6,
     imageUrl:
       "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
-    title: "GraphQL Fundamentals",
-    description: "Remote",
-    price: "$599",
+    title: "Demo Shoe",
+    description: "Description or Model",
+    price: "৳1890",
   },
   {
     id: 7,
     imageUrl:
       "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=765&q=80",
-    title: "GraphQL Fundamentals",
-    description: "Remote",
-    price: "$599",
+    title: "Demo Shoe",
+    description: "Description or Model",
+    price: "৳1890",
   },
   {
     id: 8,
     imageUrl:
       "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1025&q=80",
-    title: "GraphQL Fundamentals",
-    description: "Remote",
-    price: "$599",
+    title: "Demo Shoe",
+    description: "Description or Model",
+    price: "৳1890",
   },
 ];
 

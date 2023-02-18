@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <nav
     className={`flex justify-between w-full ${
-      isSticky ? "bg-gray-900 transition-all duration-500 text-white" : "bg-transparent transition-all duration-500 text-black"
+      isSticky ? "bg-gray-900 transition-all duration-700 text-white" : "bg-transparent transition-all duration-700 text-black"
     } sticky top-0 z-50`}
   >
     <div className="px-5 xl:px-12 py-6 flex w-full items-center">
