@@ -1,3 +1,39 @@
 .btn {
     @apply px-4 py-2 text-white rounded transition-all hover:scale-105 duration-300 text-sm xl:text-base hover:bg-blue-600;
   }
+  .fade-in-left {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+    animation-name: fade-in-left;
+  }
+  
+  @keyframes fade-in-left {
+    from {
+      opacity: 0;
+      transform: translateX(60%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  .fade-in {
+    opacity: 0;
+    animation-duration: 1s ;
+    animation-delay: 0.7s;
+    animation-name: fade-in;
+    animation-fill-mode: forwards;
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateX(0%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  

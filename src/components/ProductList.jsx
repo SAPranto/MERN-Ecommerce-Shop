@@ -1,5 +1,5 @@
 import React from "react";
-import "/src/App.css"
+import "/src/App.css";
 import TabMenu from "./TabMenu";
 
 const products = [
@@ -78,9 +78,9 @@ const ProductList = () => {
           Our Collection
         </h3>
       </div>
-      <TabMenu/>
+      <TabMenu />
       {/* Product List */}
-      <section className="py-10 bg-gray-100">
+      <section className="py-10 bg-gray-100 fade-in">
         <div className="mx-6 md:mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {products.map((product) => (
             <card
@@ -93,12 +93,6 @@ const ProductList = () => {
                   src={product.imageUrl}
                   alt={product.title}
                 />
-                {/* Sale Tag */}
-                {product.price.includes("%") ? (
-                  <div className="absolute top-0 left-0 bg-yellow-500 py-1 px-2 rounded-br-lg text-white font-semibold">
-                    {product.price}
-                  </div>
-                ) : null}
               </div>
               <div className="py-3">
                 <h4 className="text-lg font-semibold">{product.title}</h4>
@@ -108,8 +102,8 @@ const ProductList = () => {
                   <span className="mx-1">{product.price}</span>
                 </div>
                 <div className="flex justify-between pt-4">
-                <button className="btn bg-sky-600">Buy Now</button>
-                <button className="btn bg-red-500">Add To Cart</button>
+                  <button className="btn bg-sky-600">Buy Now</button>
+                  <button className="btn bg-red-500">Add To Cart</button>
                 </div>
               </div>
             </card>

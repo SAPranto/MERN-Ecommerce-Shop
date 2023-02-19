@@ -1,5 +1,7 @@
 import React from "react";
+import "../app.css"
 import {HiArrowNarrowRight} from "react-icons/hi"
+
 const Banner = () => {
   return (
     <banner className="bg-white dark:bg-gray-900">
@@ -13,14 +15,14 @@ const Banner = () => {
           </h2>
           <a
             href="#"
-            className="inline-flex items-center justify-center px-4 py-3 mr-3 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900"
+            className="inline-flex btn bg-red-500 mr-4"
           >
             Buy Now
           <HiArrowNarrowRight className="text-2xl ml-2"/>
           </a>
           <a
             href="#"
-            className="inline-flex items-center justify-center px-5 py-3 text-base font-medium text-center text-gray-900 border border-gray-300 rounded-lg hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+            className="btn bg-black fade-in"
           >
             Contact Now
           </a>
@@ -29,7 +31,7 @@ const Banner = () => {
           <img
             src="/shoe.webp"
             alt="Nexoy"
-            className=""
+            className="fade-in-left"
           />
         </div>
       </div>
