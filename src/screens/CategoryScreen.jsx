@@ -1,5 +1,4 @@
 import React from "react";
-import BreadCrumbs from "../components/BreadCrumbs";
 import FilterBar from "../components/FilterBar";
 import Pagnination from "../components/Pagnination";
 import ProductsGrid from "../components/ProductsGrid";
@@ -7,7 +6,6 @@ import ProductsGrid from "../components/ProductsGrid";
 const CategoryScreen = () => {
   return (
     <>
-      <BreadCrumbs />
       <div className="container px-4 py-8 mx-auto sm:px-6 sm:py-12">
         <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
           Our Products

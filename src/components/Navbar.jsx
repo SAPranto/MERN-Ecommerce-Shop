@@ -32,52 +32,52 @@ const Navbar = () => {
       } sticky top-0 z-50`}
     >
       <div className="px-5 xl:px-12 py-6 flex w-full items-center">
-        <Link className="text-3xl font-bold font-heading" to="/">
-          {/* <img class="h-9" src="logo.png" alt="logo"> */}
+        <Link to="/">
+          <h1 className="text-3xl font-bold font-heading hover:scale-110 transition duration-300">
           NeXoy
+          </h1>
         </Link>
-        {/* Nav Links */}
         <ul className="hidden md:flex px-4 mx-auto text-lg font-semibold font-heading space-x-12">
-          <li>
-            <Link className="hover:text-sky-600" to="/">
+          <li className="hover:text-sky-600 hover:scale-110 transition ease-in-out duration-300">
+            <Link to="/">
               Home
             </Link>
           </li>
-          <li>
-            <Link className="hover:text-sky-600" to="/category">
+          <li className="hover:text-sky-600 hover:scale-110 transition ease-in-out duration-300">
+            <Link to="/category">
               Products
             </Link>
           </li>
-          <li>
-            <Link className="hover:text-sky-600" to="#">
+          <li className="hover:text-sky-600 hover:scale-110 transition ease-in-out duration-300">
+            <Link to="#">
               About Us
             </Link>
           </li>
-          <li>
-            <Link className="" to="#">
+          <li className="hover:text-sky-600 hover:scale-110 transition ease-in-out duration-300">
+            <Link to="#">
               Contact Us
             </Link>
           </li>
         </ul>
-        {/* Header Icons */}
+
         <div className="hidden xl:flex items-center space-x-5">
-          <a className="text-red-600" href="#">
-            <BsSuitHeartFill className="text-xl" />
-          </a>
-          <a className="flex items-center " href="#">
+          <Link href="#">
+            <BsSuitHeartFill className="text-xl text-red-600 hover:scale-110 transition ease-in" />
+          </Link>
+          <Link className="flex items-center " href="#">
             <BsCart4
-              className={`text-xl ${isSticky ? "text-white" : "text-blue-900"}`}
+              className={`text-xl hover:scale-110 transition ease-in ${isSticky ? "text-white" : "text-blue-900"}`}
             />
             <span className="flex absolute -mt-4 ml-4">
               <span className="animate-ping absolute inline-flex h-2 w-2 rounded-full bg-pink-500 opacity-75" />
               <span className="relative inline-flex rounded-full h-2 w-2 bg-pink-600"></span>
             </span>
-          </a>
-          <a className="flex items-center" href="#">
+          </Link>
+          <Link className="flex items-center" href="#">
             <FaUserAlt
-              className={`text-xl ${isSticky ? "text-white" : "text-blue-600"}`}
+              className={`text-xl hover:scale-110 transition ease-in ${isSticky ? "text-white" : "text-blue-600"}`}
             />
-          </a>
+          </Link>
         </div>
       </div>
       {/* Mobile Navbar */}

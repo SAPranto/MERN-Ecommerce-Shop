@@ -1,6 +1,7 @@
 import React from "react";
 import "/src/App.css";
 import TabMenu from "./TabMenu";
+import { Link } from "react-router-dom";
 
 const products = [
   {
@@ -102,8 +103,12 @@ const ProductList = () => {
                   <span className="mx-1">{product.price}</span>
                 </div>
                 <div className="flex justify-between pt-4">
+                  <Link to="/product">
                   <button className="btn bg-sky-600">Buy Now</button>
+                  </Link>
+                  <Link to="/product">
                   <button className="btn bg-red-500">Add To Cart</button>
+                  </Link>
                 </div>
               </div>
             </card>
