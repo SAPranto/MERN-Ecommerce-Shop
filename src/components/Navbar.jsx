@@ -39,18 +39,18 @@ const Navbar = () => {
         {/* Nav Links */}
         <ul className="hidden md:flex px-4 mx-auto text-lg font-semibold font-heading space-x-12">
           <li>
-            <Link className="hover:text-sky-600" to="#">
+            <Link className="hover:text-sky-600" to="/">
               Home
             </Link>
           </li>
           <li>
-            <Link className="hover:text-sky-600" to="#">
-              Catagory
+            <Link className="hover:text-sky-600" to="/category">
+              Products
             </Link>
           </li>
           <li>
             <Link className="hover:text-sky-600" to="#">
-              Collections
+              About Us
             </Link>
           </li>
           <li>

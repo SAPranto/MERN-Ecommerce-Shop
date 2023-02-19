@@ -1,8 +1,11 @@
 import React from 'react'
+import CartSideBar from '../components/CartSideBar'
 
 const CartScreen = () => {
   return (
-    <div>CartScreen</div>
+    <>
+    <CartSideBar/>
+    </>
   )
 }
 
