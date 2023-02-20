@@ -4,7 +4,7 @@ import {HiArrowNarrowRight} from "react-icons/hi"
 
 const Banner = () => {
   return (
-    <banner className="bg-white dark:bg-gray-900">
+    <div className="bg-white dark:bg-gray-900">
       <div className="grid max-w-screen-xl px-4 py-2 mx-auto lg:gap-8 xl:gap-0 lg:py-4 lg:grid-cols-12">
         <div className="mr-auto place-self-center lg:col-span-7 ">
           <h1 className="max-w-2xl mb-4 text-4xl font-extrabold leading-none md:text-5xl xl:text-6xl dark:text-white">
@@ -35,7 +35,7 @@ const Banner = () => {
           />
         </div>
       </div>
-    </banner>
+    </div>
   );
 };
 

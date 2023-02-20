@@ -84,7 +84,7 @@ const ProductList = () => {
       <section className="py-10 bg-gray-100 fade-in">
         <div className="mx-6 md:mx-auto grid max-w-6xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
           {products.map((product) => (
-            <card
+            <div
               key={product.id}
               className="rounded-2xl bg-white p-3 shadow-lg hover:shadow-2xl hover:transform transition duration-500 ease-in-out transform hover:-translate-y-1 hover:scale-105 md:hover:scale-110 cursor-pointer"
             >
@@ -111,7 +111,7 @@ const ProductList = () => {
                   </Link>
                 </div>
               </div>
-            </card>
+            </div>
           ))}
         </div>
       </section>
