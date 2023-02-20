@@ -1,5 +1,5 @@
 import React from "react";
-import "/src/App.css";
+import "../App.css";
 import TabMenu from "./TabMenu";
 import { Link } from "react-router-dom";
 
