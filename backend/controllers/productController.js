@@ -10,9 +10,29 @@ exports.newProduct = async (req, res) => {
   })
 };
 
-exports.getProducts = (req, res, next) => {
+// Get All Products
+exports.getProducts = async (req, res ) => {
+  const products = await Product.find()
   res.status(200).json({
     success: true,
-    message: "This route will show all products in database.",
+    count: products.length,
+    products
   });
 };
+
+// Get single product details   =>   /api/v1/product/:id
+exports.getSingleProduct = catchAsyncErrors(async (req, res, next) => {
+
+  const product = await Product.findById(req.params.id);
+
+  if (!product) {
+      return next(new ErrorHandler('Product not found', 404));
+  }
+
+
+  res.status(200).json({
+      success: true,
+      product
+  })
+
+})
